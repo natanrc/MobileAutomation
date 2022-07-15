@@ -1,0 +1,4 @@
+userName_input: com.example.myapplication:id/username
+Password_input: com.example.myapplication:id/password
+signButton_login: com.example.myapplication:id/signIn
+user_success: //*[contains(@text, "Book")]

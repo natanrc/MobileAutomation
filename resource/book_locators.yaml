@@ -1,0 +1,20 @@
+TapBook_page: com.example.myapplication:id/book
+book_page: com.example.myapplication:id/textView3
+Tapfrom_city: com.example.myapplication:id/spinnerFrom
+from_city: //*[contains(@text, "Chicago"]
+TapTo_city: com.example.myapplication:id/spinnerTo
+to_city: //*[contains(@text, "Paris"]
+Tapflight_class: com.example.myapplication:id/spinnerClass
+flight_class: //*[contains(@text, "Business"]
+TapStart_date: com.example.myapplication:id/textStartDate
+start_date: //android.view.View[@content-desc="01 August 2019"]
+btn_OK: android:id/button1
+TapEnd_date: com.example.myapplication:id/textEndDate
+end_date: //android.view.View[@content-desc="14 August 2019"]
+opt_book: com.example.myapplication:id/radioButtonFlightHotel
+chkBox_book: com.example.myapplication:id/checkBoxDay
+btn_book: com.example.myapplication:id/book_flight
+book_contain: com.example.myapplication:id/textView6
+book_price: com.example.myapplication:id/price1
+btn_confirm: com.example.myapplication:id/confirm_order
+booked_page: com.example.myapplication:id/checkedTextView

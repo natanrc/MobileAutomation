@@ -1,0 +1,5 @@
+tapsearch_link: com.example.myapplication:id/search_flight
+txt_flightNo: com.example.myapplication:id/flight_number
+btn_search: com.example.myapplication:id/searchFlight
+search_contain: //*[contains(@text, "Enter Flight Number")]
+get_flightdetails: //*[contains(@text, "DA 935")]
