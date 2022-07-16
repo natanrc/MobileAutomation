@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220716 01:08:03.944" rpa="false" schemaversion="3">
-<suite id="s1" name="Book" source="D:\DOJOBOX\mobiletest\suites\book.robot">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220716 21:00:10.177" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="D:\DOJOBOX\mobiletest\suites\login.robot">
 <kw name="Open Flight Application" library="Base" type="SETUP">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -16,50 +16,60 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220716 01:08:04.159" endtime="20220716 01:08:20.676"/>
+<status status="PASS" starttime="20220716 21:00:10.424" endtime="20220716 21:00:26.257"/>
 </kw>
-<status status="PASS" starttime="20220716 01:08:04.159" endtime="20220716 01:08:20.676"/>
+<status status="PASS" starttime="20220716 21:00:10.424" endtime="20220716 21:00:26.257"/>
 </kw>
-<test id="s1-t1" name="User Shoul be able to complete book" line="9">
+<test id="s1-t1" name="User should able login with valid data" line="9">
 <kw name="verify homepage appears" library="homePage">
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${toolbar}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220716 21:00:26.260" endtime="20220716 21:00:26.687"/>
+</kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${logo_homepage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" starttime="20220716 01:08:20.685" endtime="20220716 01:08:21.150"/>
+<status status="PASS" starttime="20220716 21:00:26.688" endtime="20220716 21:00:26.825"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${mainimage_homepage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" starttime="20220716 01:08:21.150" endtime="20220716 01:08:21.238"/>
+<status status="PASS" starttime="20220716 21:00:26.825" endtime="20220716 21:00:26.929"/>
 </kw>
-<status status="PASS" starttime="20220716 01:08:20.684" endtime="20220716 01:08:21.238"/>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${body_title}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220716 21:00:26.929" endtime="20220716 21:00:27.014"/>
+</kw>
+<status status="PASS" starttime="20220716 21:00:26.260" endtime="20220716 21:00:27.015"/>
 </kw>
 <kw name="Tap Sign in button homepage" library="homePage">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${button_login}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220716 01:08:21.241" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
-<status status="PASS" starttime="20220716 01:08:21.239" endtime="20220716 01:08:21.399"/>
+<msg timestamp="20220716 21:00:27.018" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<status status="PASS" starttime="20220716 21:00:27.016" endtime="20220716 21:00:27.216"/>
 </kw>
-<status status="PASS" starttime="20220716 01:08:21.239" endtime="20220716 01:08:21.400"/>
+<status status="PASS" starttime="20220716 21:00:27.015" endtime="20220716 21:00:27.217"/>
 </kw>
 <kw name="Verify Login page" library="Login">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${userName_input}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220716 01:08:21.402" endtime="20220716 01:08:23.693"/>
+<status status="PASS" starttime="20220716 21:00:27.218" endtime="20220716 21:00:29.493"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${userName_input}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" starttime="20220716 01:08:23.694" endtime="20220716 01:08:23.760"/>
+<status status="PASS" starttime="20220716 21:00:29.493" endtime="20220716 21:00:29.556"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${signButton_login}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" starttime="20220716 01:08:23.761" endtime="20220716 01:08:23.817"/>
+<status status="PASS" starttime="20220716 21:00:29.556" endtime="20220716 21:00:29.642"/>
 </kw>
-<status status="PASS" starttime="20220716 01:08:21.402" endtime="20220716 01:08:23.817"/>
+<status status="PASS" starttime="20220716 21:00:27.218" endtime="20220716 21:00:29.643"/>
 </kw>
 <kw name="Input Username" library="Login">
 <arg>username=support@ngendigital.com</arg>
@@ -67,10 +77,10 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${userName_input}</arg>
 <arg>${username}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220716 01:08:23.822" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
-<status status="PASS" starttime="20220716 01:08:23.818" endtime="20220716 01:08:23.930"/>
+<msg timestamp="20220716 21:00:29.646" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<status status="PASS" starttime="20220716 21:00:29.644" endtime="20220716 21:00:29.765"/>
 </kw>
-<status status="PASS" starttime="20220716 01:08:23.818" endtime="20220716 01:08:23.930"/>
+<status status="PASS" starttime="20220716 21:00:29.643" endtime="20220716 21:00:29.766"/>
 </kw>
 <kw name="Input Password" library="Login">
 <arg>pass=abc123</arg>
@@ -78,123 +88,45 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${Password_input}</arg>
 <arg>${pass}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220716 01:08:23.934" level="INFO">Typing text 'abc123' into text field 'com.example.myapplication:id/password'</msg>
-<status status="PASS" starttime="20220716 01:08:23.932" endtime="20220716 01:08:24.544"/>
+<msg timestamp="20220716 21:00:29.768" level="INFO">Typing text 'abc123' into text field 'com.example.myapplication:id/password'</msg>
+<status status="PASS" starttime="20220716 21:00:29.767" endtime="20220716 21:00:30.342"/>
 </kw>
-<status status="PASS" starttime="20220716 01:08:23.931" endtime="20220716 01:08:24.544"/>
+<status status="PASS" starttime="20220716 21:00:29.766" endtime="20220716 21:00:30.342"/>
 </kw>
 <kw name="Tap Sign in Button login page" library="Login">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signButton_login}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220716 01:08:24.547" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
-<status status="PASS" starttime="20220716 01:08:24.545" endtime="20220716 01:08:25.093"/>
+<msg timestamp="20220716 21:00:30.345" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<status status="PASS" starttime="20220716 21:00:30.343" endtime="20220716 21:00:30.893"/>
 </kw>
-<status status="PASS" starttime="20220716 01:08:24.545" endtime="20220716 01:08:25.094"/>
+<status status="PASS" starttime="20220716 21:00:30.343" endtime="20220716 21:00:30.893"/>
 </kw>
 <kw name="Verify User in homepage" library="Login">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${user_success}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220716 01:08:25.095" endtime="20220716 01:08:26.384"/>
+<status status="PASS" starttime="20220716 21:00:30.894" endtime="20220716 21:00:32.325"/>
 </kw>
-<status status="PASS" starttime="20220716 01:08:25.094" endtime="20220716 01:08:26.384"/>
+<status status="PASS" starttime="20220716 21:00:30.893" endtime="20220716 21:00:32.325"/>
 </kw>
-<kw name="User Tap link Booking" library="book">
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${TapBook_page}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220716 01:08:26.387" level="INFO">Clicking element 'com.example.myapplication:id/book'.</msg>
-<status status="PASS" starttime="20220716 01:08:26.385" endtime="20220716 01:08:26.457"/>
-</kw>
-<status status="PASS" starttime="20220716 01:08:26.384" endtime="20220716 01:08:26.458"/>
-</kw>
-<kw name="Verify User in booking page" library="book">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${book_page}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220716 01:08:26.458" endtime="20220716 01:08:28.827"/>
-</kw>
-<kw name="Element Should Be Visible" library="AppiumLibrary">
-<arg>${btn_book}</arg>
-<doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" starttime="20220716 01:08:28.828" endtime="20220716 01:08:28.881"/>
-</kw>
-<status status="PASS" starttime="20220716 01:08:26.458" endtime="20220716 01:08:28.881"/>
-</kw>
-<kw name="User Select from City" library="book">
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${Tapfrom_city}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220716 01:08:28.884" level="INFO">Clicking element 'com.example.myapplication:id/spinnerFrom'.</msg>
-<status status="PASS" starttime="20220716 01:08:28.882" endtime="20220716 01:08:28.963"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${to_city}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220716 01:08:30.287" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220716 01:08:29.077" endtime="20220716 01:08:30.287"/>
-</kw>
-<msg timestamp="20220716 01:08:30.287" level="FAIL">InvalidSelectorException: Message: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 28: ]
-</msg>
-<status status="FAIL" starttime="20220716 01:08:28.963" endtime="20220716 01:08:30.289"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${from_city}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220716 01:08:30.289" endtime="20220716 01:08:30.289"/>
-</kw>
-<status status="FAIL" starttime="20220716 01:08:28.882" endtime="20220716 01:08:30.290"/>
-</kw>
-<kw name="User Select Destination City" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.290" endtime="20220716 01:08:30.291"/>
-</kw>
-<kw name="User select Flight class" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.291" endtime="20220716 01:08:30.291"/>
-</kw>
-<kw name="User select Start Date" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.291" endtime="20220716 01:08:30.291"/>
-</kw>
-<kw name="User Select End Date" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.291" endtime="20220716 01:08:30.292"/>
-</kw>
-<kw name="User tap Option Booking" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.292" endtime="20220716 01:08:30.292"/>
-</kw>
-<kw name="User tap chek box booking a day" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.292" endtime="20220716 01:08:30.292"/>
-</kw>
-<kw name="Tap Booking Button" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.292" endtime="20220716 01:08:30.292"/>
-</kw>
-<kw name="User select Booking Price" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.293" endtime="20220716 01:08:30.293"/>
-</kw>
-<kw name="Tap Confirm Button" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.293" endtime="20220716 01:08:30.293"/>
-</kw>
-<kw name="Verify User was Booked" library="book">
-<status status="NOT RUN" starttime="20220716 01:08:30.294" endtime="20220716 01:08:30.294"/>
-</kw>
-<status status="FAIL" starttime="20220716 01:08:20.677" endtime="20220716 01:08:30.294">InvalidSelectorException: Message: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 28: ]
-</status>
+<doc>Test to verify user should be able login with valid data</doc>
+<status status="PASS" starttime="20220716 21:00:26.257" endtime="20220716 21:00:32.325"/>
 </test>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220716 01:08:30.296" endtime="20220716 01:08:30.929"/>
+<status status="PASS" starttime="20220716 21:00:32.327" endtime="20220716 21:00:32.880"/>
 </kw>
-<status status="FAIL" starttime="20220716 01:08:03.945" endtime="20220716 01:08:30.929"/>
+<status status="PASS" starttime="20220716 21:00:10.178" endtime="20220716 21:00:32.880"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Book">Book</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>

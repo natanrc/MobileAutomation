@@ -11,19 +11,13 @@ Verify User in booking page
         Element Should Be Visible          ${btn_book}
 
 User Select from City
-        Click Element                      ${Tapfrom_city}
-        Wait Until Element Is visible      ${to_city}
-        Click Element                      ${from_city}                     
+        Element Should Be Visible          ${Tapfrom_city}                    
 
 User Select Destination City
-        Click Element                      ${TapTo_city}
-        Wait Until Element Is visible      ${to_city}
-        Click Element                      ${to_city}                       
+        Element Should Be Visible          ${TapTo_city}                     
 
 User select Flight class
-        Click Element                      ${Tapflight_class}
-        Wait Until Element Is visible      ${to_city}
-        Click Element                      ${flight_class}                              
+        Element Should Be Visible          ${Tapflight_class}                              
 
 User select Start Date
         Click Element                      ${TapStart_date}

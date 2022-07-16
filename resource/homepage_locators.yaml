@@ -3,3 +3,4 @@ logo_homepage: com.example.myapplication:id/imageView4
 mainImage_homepage: com.example.myapplication:id/imageView
 username_homepage: com.example.myapplication:id/textView2
 body_title: com.example.myapplication:id/textView4
+button_login: com.example.myapplication:id/login
