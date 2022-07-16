@@ -1,6 +1,5 @@
 toolbar: com.example.myapplication:id/toolbar
 logo_homepage: com.example.myapplication:id/imageView4
 mainImage_homepage: com.example.myapplication:id/imageView
-button_login: com.example.myapplication:id/login
 username_homepage: com.example.myapplication:id/textView2
 body_title: com.example.myapplication:id/textView4

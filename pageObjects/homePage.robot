@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation               homepage keywords
+Documentation               Flight homepage keywords
 Resource                    Base.robot
 Variables                   ../resource/homepage_locators.yaml
 

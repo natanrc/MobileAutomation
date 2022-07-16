@@ -4,5 +4,5 @@ Suite Setup                 Open Flight Application
 Suite Teardown              Close Application
 
 ***Test Cases***
-Verify Home Page
+Verify Flight Home Page 
     verify homepage appears
