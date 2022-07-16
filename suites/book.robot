@@ -7,6 +7,8 @@ Suite Teardown              Close Application
 
 ***Test Cases***
 User Shoul be able to complete book
+        [Documentation]                     Test to verify user should be able to complete booking
+
         verify homepage appears
         Tap Sign in button homepage
         Verify Login page
