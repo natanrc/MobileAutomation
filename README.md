@@ -12,15 +12,18 @@ Diagram project structure implementing with page object model
   - JAVA_HOME C:\Program Files\Java\jdk-15.0.2
   
     Appium inspector setting
-   ---
-    https://github.com/natanrc/MobileAutomation/blob/main/flight.appiumsession
-  
+         ---
+         https://github.com/natanrc/MobileAutomation/blob/main/flight.appiumsession
+         ---
+   
     APK File: 
-   ---
-    https://github.com/natanrc/MobileAutomation/blob/main/flightApp.apk
+         ---
+         https://github.com/natanrc/MobileAutomation/blob/main/flightApp.apk
+         --- 
     
-   Test Result:
-   ---
-   https://github.com/natanrc/MobileAutomation/blob/main/report.html
+# Test Result:
+    ---
+      https://github.com/natanrc/MobileAutomation/blob/main/report.html
+    ---
   
 
