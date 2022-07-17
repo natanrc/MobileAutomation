@@ -20,7 +20,8 @@ Diagram project structure implementing with page object model
          https://github.com/natanrc/MobileAutomation/blob/main/flightApp.apk
     
 # Test Result:
-    Please click below link to see the result:
+Please click below link to see the result:
+
    <a href="https://natanrc.github.io/MobileAutomation/report.html" target="_blank">Testing Report</a>
   
 
