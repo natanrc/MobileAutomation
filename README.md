@@ -1,7 +1,7 @@
 # Project Mobile Test Automation Using Robot Framework, Appium, and Android
 Diagram project structure implementing with page object model
 
-<img src="https://github.com/natanrc/MobileAutomation/blob/main/StructureRobot_framework.JPG" width=80%>
+<img src="https://github.com/natanrc/MobileAutomation/blob/main/StructureRobot_framework.JPG" width="40%">
           
 Source Project :
 
