@@ -13,20 +13,14 @@ Diagram project structure implementing with page object model
   
     Appium inspector setting
     
-         ---
          https://github.com/natanrc/MobileAutomation/blob/main/flight.appiumsession
-         ---
    
     APK File: 
     
-         ---
          https://github.com/natanrc/MobileAutomation/blob/main/flightApp.apk
-         --- 
     
 # Test Result:
 
-    ---
     https://github.com/natanrc/MobileAutomation/blob/main/report.html
-    ---
   
 
