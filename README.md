@@ -5,12 +5,13 @@ Diagram project structure implementing with page object model
           
 Source Project :
 
-Setting:
-Environment APPIUM Server GUI Setting
+APPIUM Inspector setting:
+
+  Environment APPIUM Server GUI Setting
   - Add ANDROID_HOME C:\Users\[user]\AppData\Local\Android\Sdk\platform-tools
   - JAVA_HOME C:\Program Files\Java\jdk-15.0.2
   
-APPIUM Inspector setting: 
+  Appium inspector setting
   ---
     https://github.com/natanrc/MobileAutomation/blob/main/flight.appiumsession
     
