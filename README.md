@@ -21,4 +21,4 @@ Diagram project structure implementing with page object model
     
 # Test Result:
 
-
+<a href="https://natanrc.github.io/MobileAutomation/report.html">Please click me to see the result of this testing</a>
